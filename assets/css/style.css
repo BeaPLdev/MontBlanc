@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: black;
+    width: 99.1vw;
+    height: 100vh;
+}
+
+nav {
+    width: 99.1vw;
+    height: 11rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    width: 23vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.8rem;
+}
+
+
+.title img {
+    height: 2%;
+    right: 2%;
+    position: absolute;
+    left: 23.5rem;
+    top: 3.5rem;
+}
+
+.navigation {
+    width: 45%;
+}
+
+ul {
+    width: 66, 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    list-style-type: none;
+}
+
+li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation li a:hover{
+    color: #A75B12;
+}
+
+.wave {
+    width: 31.5vw;
+    height: 43vh;
+    z-index: -1;
+}
+
+.waveGold {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 110%;
+    width: 99.1vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imageBike {
+    width: 75%;
+    height: 74.5%;
+    box-shadow: 100px 00px 100px rgb(0, 0, 0);
+}
+
+.imageBike img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imageBikeText {
+    width: 12%;
+    height: 25%;
+    position: absolute;
+    top: 23%;
+    left: 47%;
+}
+
+#curve {
+    fill: transparent;
+}
+
+svg{ 
+    transform-origin: 45.1% 45.1% !important;
+    transform: scale(1);
+    animation: rotate 20s linear infinite;
+}
+
+.imageBikeCircle {
+    fill: white;
+    letter-spacing: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.imageWheel {
+    width: 25%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageWheel img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shadow {
+    width: 20%;
+    height: 70%;
+    position: absolute;
+    box-shadow: inset -60px 00px 100px rgb(0, 0, 0);
+}
+
+.imageProgress {
+    color: white;
+    width: 42%;
+    height: 26%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    box-shadow: -10px -95px 100px rgb(0, 0, 0);
+}
+
+.imageProgress h2 {
+    padding-inline: 1rem;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+progress {
+    appearance: none;
+    width: 15rem;
+    height: 2px;
+    margin-inline: 2.5rem;
+}
+
+::-webkit-progress-bar {
+    background-color: white;
+}
+
+::-webkit-progress-value {
+    background-color: #A75B12;
+}
+
+.imageDescription {
+    width: 33.33%;
+    height: 26%;
+    color: rgba(255, 255, 255, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.8rem;
+    padding-top: 5rem;
+    padding-right: 2rem;
+    box-shadow: 00px -95px 150px rgb(0, 0, 0);
+}
+
+.imageBack {
+    width: 20%;
+    height: 21rem;
+    position: absolute;
+    z-index: 6rem;
+    bottom: -28%;
+    right: 20%;
+}
+
+.imageBack img {
+    width: 18.5vw;
+    height: 29vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.imageAsia {
+    position: absolute;
+    top: 85.45%;
+    left: -0.3rem;
+}
+
+.imageAsia img {
+    width: 100%;
+    height: 11rem;
+}
+
+.statistical {
+    background-color: black;
+    color: white;
+    padding-block: 1rem;
+    width: 20%;
+    height: 85%;
+    position: absolute;
+    right: 0;
+    top: 25.8rem;
+}
+
+.statisticalRotote {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 67%;
+}
+
+h3 {
+    width: 10rem;
+    transform: rotate(-90deg);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #3F3E44;
+
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.548);
+}
+
+h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.statisticalSpeed {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 6rem;
+    gap: 1rem;
+}
+
+.statisticalPower {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 6rem;
+    gap: 1rem;
+}
+
+.statisticalTorque {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 6rem;
+    gap: 1rem;
+}
+
+.statisticalFuel {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 6rem;
+    gap: 1rem;
+}
